@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a2e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.checkout-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #29293d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.checkout-table th, .checkout-table td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+.checkout-table th {
+    background: #4a0072;
+}
+
+.checkout-table td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.total-row {
+    font-weight: bold;
+    background: #333;
+}
+
+/* Form Styles */
+form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select, input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+}
+
+select:focus, input[type="text"]:focus {
+    outline: none;
+    background: #555;
+}
+
+/* Button Styles */
+.checkout-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #999;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #aaa;
+    color: white;
+}
+
+
+.checkout-btn {
+    background: #03dac6;
+    color: black;
+}
+
+.checkout-btn:hover {
+    background: #02c2ad;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .checkout-actions {
+        flex-direction: column;
+    }
+
+    .back-btn, .checkout-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

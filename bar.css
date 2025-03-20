@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a2e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.checkout-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #29293d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-header h2 {
+    color: black;
+}
+
+
+/* Table Styles */
+.checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.checkout-table th, .checkout-table td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+.checkout-table th {
+    background: #4a0072;
+}
+
+.checkout-table td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.total-row {
+    font-weight: bold;
+    background: #333;
+}
+
+/* Form Styles */
+form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select, input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+}
+
+select:focus, input[type="text"]:focus {
+    outline: none;
+    background: #555;
+}
+
+/* Button Styles */
+.checkout-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn, .checkout-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn {
+    background: #d500f9;
+    color: white;
+}
+
+.back-btn:hover {
+    background: #a000c8;
+}
+
+.checkout-btn {
+    background: #03dac6;
+    color: black;
+}
+
+.checkout-btn:hover {
+    background: #02c2ad;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .checkout-actions {
+        flex-direction: column;
+    }
+
+    .back-btn, .checkout-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.table-container {
+    max-height: 400px; /* Set the max height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ddd; /* Optional: Add a border for clarity */
+}
+
+.table-container thead {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
