@@ -1,2 +1,2 @@
-# cashiering-ang-inventory-management
+# cashiering-and-inventory-management
 protein shake
